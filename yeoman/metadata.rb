@@ -1,0 +1,5 @@
+name             'yeoman'
+maintainer_email 'patarleth@gmail.com'
+license          'Apache 2.0'
+description      'Installs Yeoman'
+version          '0.0.1'
