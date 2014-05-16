@@ -1,3 +1,5 @@
+include_recipe "yeoman::build_install_node"
+
 execute 'yeoman' do
   command 'npm install -g yo'
   user 'root'
