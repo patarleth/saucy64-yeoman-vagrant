@@ -23,3 +23,18 @@ end
 gem_package 'compass' do
   action :install
 end
+
+directory '/home/vagrant/project' do
+  owner 'vagrant'
+  group 'vagrant'
+  action :create
+end
+
+template "nginx.yo" do
+  path "/etc/nginx/sites-available/yo"
+  source "nginx.yo.erb"
+  owner "root"
+  group "root"
+  mode "0644"
+end
+
