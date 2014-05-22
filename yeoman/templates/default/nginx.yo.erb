@@ -5,9 +5,11 @@
 
 server {
        listen 80;
+       server_name yo.localhost;
 
        root <%= node[:yeoman][:project] %>;
        index index.html index.htm;
 
-       server_name yo.localhost;
+       location / {
+       }
 }

@@ -38,3 +38,6 @@ template "nginx.yo" do
   mode "0644"
 end
 
+link "/etc/nginx/sites-enabled/yo" do
+  to "/etc/nginx/sites-available/yo"
+end
